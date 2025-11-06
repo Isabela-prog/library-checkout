@@ -1,0 +1,14 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.cache
+*.log
+
+# Build
+bin/
+obj/
+
+# Sistema
+Thumbs.db
+Desktop.ini
