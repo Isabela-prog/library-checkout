@@ -1,30 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Library.Models
+﻿namespace Library.Models
 {
-    internal class User
+    // Representa um usuário
+    public class User
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
-        public string UserName { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public int Cpf { get; set; }
-        public User(int id, string name, string email, string passowrd, string userName, DateTime createdAt, int cpf)
-        {
-            Id = id;
-            Name = name;
-            Email = email;
-            Password = passowrd;
-            UserName = userName;
-            CreatedAt = createdAt;
-            Cpf = cpf;
-        }
+        public Guid Id { get; set; } = Guid.NewGuid();
+        public string Username { get; set; } = null!;
+        public string PasswordHash { get; set; } = null!;
+        public string FullName { get; set; } = "";
+        public string Email { get; set; } = "";
+        public string City { get; set; } = "";
+        public string State { get; set; } = "";
+        public string Address { get; set; } = "";
+        public double? Latitude { get; set; }
+        public double? Longitude { get; set; }
+        public Dictionary<string, string> Preferences { get; set; } = new();
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 }

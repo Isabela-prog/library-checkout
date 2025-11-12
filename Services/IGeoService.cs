@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Library.Services
 {
-    internal class BookServices
+    public interface IGeoService
     {
+        (double Latitude, double Longitude)? GetCoordinates(string address);
     }
 }
