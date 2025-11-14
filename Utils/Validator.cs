@@ -1,7 +1,6 @@
 ﻿using Library.Models;
 using System.Text.RegularExpressions;
 
-
 namespace Library.Utils
 {
     public static class Validator
@@ -31,14 +30,20 @@ namespace Library.Utils
                 throw new ArgumentException("Endereço é obrigatório.");
         }
 
-        // Validação completa do livro
-        public static void ValidateBook(Book book)
+        // Validação completa do livro listado para troca
+        public static void ValidateListingBook(ListingBook book)
         {
             if (string.IsNullOrWhiteSpace(book.Title))
                 throw new ArgumentException("Título do livro é obrigatório.");
 
-            if (string.IsNullOrWhiteSpace(book.Isbn))
-                throw new ArgumentException("ISBN é obrigatório.");
+            if (string.IsNullOrWhiteSpace(book.Author))
+                throw new ArgumentException("Autor do livro é obrigatório.");
+
+            if (string.IsNullOrWhiteSpace(book.Condition))
+                throw new ArgumentException("Condição do livro é obrigatória.");
+
+            if (book.Year <= 0)
+                throw new ArgumentException("Ano de publicação inválido.");
 
             if (string.IsNullOrWhiteSpace(book.Genre))
                 throw new ArgumentException("Gênero é obrigatório.");
@@ -48,24 +53,13 @@ namespace Library.Utils
 
             if (string.IsNullOrWhiteSpace(book.Summary))
                 throw new ArgumentException("Resumo é obrigatório.");
-
-            if (string.IsNullOrWhiteSpace(book.AuthorName))
-                throw new ArgumentException("Nome do autor é obrigatório.");
-
-            if (!string.IsNullOrWhiteSpace(book.Isbn) && !IsValidIsbn(book.Isbn))
-                throw new ArgumentException("ISBN inválido.");
         }
+
 
         // Validação de email com regex simples
         public static bool IsValidEmail(string email)
         {
             return Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$");
-        }
-
-        // Validação de ISBN (10 ou 13 dígitos)
-        public static bool IsValidIsbn(string isbn)
-        {
-            return Regex.IsMatch(isbn, @"^\d{10}(\d{3})?$");
         }
     }
 }

@@ -28,18 +28,31 @@ namespace Library.Security
             return Convert.ToBase64String(outputBytes);
         }
 
-        public bool Verify(string password, string hash)
+        public bool Verify(string password, string storedHash)
         {
-            var decoded = Convert.FromBase64String(hash);
-            if (decoded.Length != 1 + SaltSize + KeySize || decoded[0] != 0x01) return false;
-            var salt = new byte[SaltSize];
-            Buffer.BlockCopy(decoded, 1, salt, 0, SaltSize);
-            var storedSubkey = new byte[KeySize];
-            Buffer.BlockCopy(decoded, 1 + SaltSize, storedSubkey, 0, KeySize);
+            try
+            {
+                var decoded = Convert.FromBase64String(storedHash);
 
-            var generatedSubkey = KeyDerivation.Pbkdf2(password, salt, KeyDerivationPrf.HMACSHA256, Iterations, KeySize);
-            return CryptographicOperations.FixedTimeEquals(storedSubkey, generatedSubkey);
+                if (decoded.Length != 1 + SaltSize + KeySize || decoded[0] != 0x01)
+                    return false;
+
+                var salt = new byte[SaltSize];
+                Buffer.BlockCopy(decoded, 1, salt, 0, SaltSize);
+
+                var storedSubkey = new byte[KeySize];
+                Buffer.BlockCopy(decoded, 1 + SaltSize, storedSubkey, 0, KeySize);
+
+                var generatedSubkey = KeyDerivation.Pbkdf2(password, salt, KeyDerivationPrf.HMACSHA256, Iterations, KeySize);
+
+                return CryptographicOperations.FixedTimeEquals(storedSubkey, generatedSubkey);
+            }
+            catch
+            {
+                return false;
+            }
         }
+
 
 
     }

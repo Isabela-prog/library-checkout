@@ -60,5 +60,10 @@ namespace Library.Services
             if (!_hasher.Verify(password, user.PasswordHash)) return null;
             return user;
         }
+
+        public void UpdateUser(User user)
+        {
+            _userRepo.Update(user);
+        }
     }
 }

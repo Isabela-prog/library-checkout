@@ -1,0 +1,57 @@
+[
+  {
+    "Id": "333089c5-8be1-49dd-bd91-cb955c164d92",
+    "OwnerId": "1c61f827-a977-4285-b481-f767508deab3",
+    "Title": "casa",
+    "Author": "Pedro",
+    "Condition": "usado",
+    "Year": 0,
+    "Genre": "",
+    "Language": "",
+    "Summary": ""
+  },
+  {
+    "Id": "7d12380f-0d5d-49cb-b913-746d302c83dd",
+    "OwnerId": "b04b1adb-925b-41a4-a351-559e3ba6e6ac",
+    "Title": "haha",
+    "Author": "Pablo",
+    "Condition": "Novo",
+    "Year": 2008,
+    "Genre": "Com\u00E9dia",
+    "Language": "Portugu\u00EAs",
+    "Summary": "blablblala"
+  },
+  {
+    "Id": "93b9d479-8c29-4d05-be02-eb3633e9ba1a",
+    "OwnerId": "1c61f827-a977-4285-b481-f767508deab3",
+    "Title": "livro1",
+    "Author": "autor1",
+    "Condition": "usado",
+    "Year": 2000,
+    "Genre": "romance",
+    "Language": "portugu\u00EAs",
+    "Summary": "hajsasipaksa"
+  },
+  {
+    "Id": "18f77126-05e6-44f0-9d15-da2757ff4ccd",
+    "OwnerId": "1c61f827-a977-4285-b481-f767508deab3",
+    "Title": "livro2",
+    "Author": "autor2",
+    "Condition": "usado",
+    "Year": 2000,
+    "Genre": "romance",
+    "Language": "portugues",
+    "Summary": "akskaska"
+  },
+  {
+    "Id": "6232627e-a0f0-4d67-9747-df848f74c507",
+    "OwnerId": "b04b1adb-925b-41a4-a351-559e3ba6e6ac",
+    "Title": "livro3",
+    "Author": "autor3",
+    "Condition": "novo",
+    "Year": 2000,
+    "Genre": "romance",
+    "Language": "portugues",
+    "Summary": "askaksoas"
+  }
+]

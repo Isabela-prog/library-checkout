@@ -1,0 +1,29 @@
+[
+  {
+    "Id": "ad0b9de9-63dd-430f-8e19-9b59620f6cc4",
+    "RequesterId": "1c61f827-a977-4285-b481-f767508deab3",
+    "OwnerId": "b04b1adb-925b-41a4-a351-559e3ba6e6ac",
+    "BookRequestedId": "7d12380f-0d5d-49cb-b913-746d302c83dd",
+    "BookOfferedId": "333089c5-8be1-49dd-bd91-cb955c164d92",
+    "Status": "Pendente",
+    "CreatedAt": "2025-11-13T16:05:44.3776639-03:00"
+  },
+  {
+    "Id": "cab5aa17-f918-4cd8-b908-0e37685a0b6c",
+    "RequesterId": "b04b1adb-925b-41a4-a351-559e3ba6e6ac",
+    "OwnerId": "1c61f827-a977-4285-b481-f767508deab3",
+    "BookRequestedId": "93b9d479-8c29-4d05-be02-eb3633e9ba1a",
+    "BookOfferedId": "6232627e-a0f0-4d67-9747-df848f74c507",
+    "Status": "Pendente",
+    "CreatedAt": "2025-11-13T16:50:33.1587867-03:00"
+  },
+  {
+    "Id": "912496f1-a29d-40b5-b95f-b744d4af9032",
+    "RequesterId": "b04b1adb-925b-41a4-a351-559e3ba6e6ac",
+    "OwnerId": "1c61f827-a977-4285-b481-f767508deab3",
+    "BookRequestedId": "18f77126-05e6-44f0-9d15-da2757ff4ccd",
+    "BookOfferedId": null,
+    "Status": "Pendente",
+    "CreatedAt": "2025-11-13T17:02:53.5170718-03:00"
+  }
+]

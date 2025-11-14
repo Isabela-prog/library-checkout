@@ -1,30 +1,30 @@
 [
   {
-    "Id": "d54b5092-fb12-4122-86f2-3c1d5ea9fdd1",
-    "Username": "teste1",
-    "PasswordHash": "123",
-    "FullName": "Teste1",
-    "Email": "teste1@email.com",
-    "City": "Cidade",
-    "State": "Estado",
-    "Address": "Endere\u00E7o",
+    "Id": "1c61f827-a977-4285-b481-f767508deab3",
+    "Username": "isa",
+    "PasswordHash": "AXc10JToCSAD7zB\u002BjhM\u002BS7PtDBI/x5eUkxVCRH3lnnyQOw\u002BP0u6ilTNDaeKi5lPa0w==",
+    "FullName": "Isabela Santos",
+    "Email": "isabela@email.com",
+    "City": "S\u00E3o Vicentre",
+    "State": "S\u00E3o Paulo",
+    "Address": "Rua Marqu\u00EAs de S\u00E3o Vicente, 410, Parque Bitaru, S\u00E3o Vicente, S\u00E3o Paulo, Brasil",
     "Latitude": null,
     "Longitude": null,
     "Preferences": {},
-    "CreatedAt": "2025-11-12T18:21:19.3682449Z"
+    "CreatedAt": "2025-11-13T17:35:45.5914575Z"
   },
   {
-    "Id": "ba48ba1c-b72b-4413-82ad-cc4ea4770e61",
-    "Username": "teste2",
-    "PasswordHash": "123",
-    "FullName": "Teste2",
-    "Email": "teste2@email.com",
-    "City": "Cidade",
-    "State": "Estado",
-    "Address": "Endere\u00E7o",
-    "Latitude": null,
-    "Longitude": null,
+    "Id": "b04b1adb-925b-41a4-a351-559e3ba6e6ac",
+    "Username": "Pedro",
+    "PasswordHash": "AayX3Mv8QKVkTwV9CE8cvHsf4jFptZyH7maCgNTg42k5b67EOzfgHDSnyiyEVl6EKw==",
+    "FullName": "Pedro Salgado",
+    "Email": "pedro@email.com",
+    "City": "S\u00E3o Vicente",
+    "State": "S\u00E3o Paulo",
+    "Address": "Rua Marqu\u00EAs de S\u00E3o Vicente, 410, Parque Bitaru, S\u00E3o Vicente, S\u00E3o Paulo, Brasil",
+    "Latitude": -239691947,
+    "Longitude": -463965619,
     "Preferences": {},
-    "CreatedAt": "2025-11-12T18:24:08.8920821Z"
+    "CreatedAt": "2025-11-13T18:11:54.0902435Z"
   }
 ]
