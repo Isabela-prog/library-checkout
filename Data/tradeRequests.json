@@ -25,5 +25,14 @@
     "BookOfferedId": null,
     "Status": "Pendente",
     "CreatedAt": "2025-11-13T17:02:53.5170718-03:00"
+  },
+  {
+    "Id": "32f77ead-efef-4e85-9ffd-f45b81a7f36d",
+    "RequesterId": "81a2b518-a73d-4dac-9bf8-793d13d27ae7",
+    "OwnerId": "1c61f827-a977-4285-b481-f767508deab3",
+    "BookRequestedId": "18f77126-05e6-44f0-9d15-da2757ff4ccd",
+    "BookOfferedId": null,
+    "Status": "Pendente",
+    "CreatedAt": "2025-11-16T20:32:07.4204096-03:00"
   }
 ]

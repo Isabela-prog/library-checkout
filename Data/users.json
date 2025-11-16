@@ -26,5 +26,19 @@
     "Longitude": -463965619,
     "Preferences": {},
     "CreatedAt": "2025-11-13T18:11:54.0902435Z"
+  },
+  {
+    "Id": "81a2b518-a73d-4dac-9bf8-793d13d27ae7",
+    "Username": "Claudio",
+    "PasswordHash": "AYapdfvD25PfRgy\u002BkIUWCF6eH55KGKTseOhXaEqreOSLEtqE6Veg03eVoLun4picoQ==",
+    "FullName": "Claudio Iodes",
+    "Email": "claudio@email.com",
+    "City": "sao vicente",
+    "State": "sao paulo",
+    "Address": "Avenida Newton Prado, 478, Morro dos Barbosas, S\u00E3o Vicente, S\u00E3o Paulo, Brasil",
+    "Latitude": null,
+    "Longitude": null,
+    "Preferences": {},
+    "CreatedAt": "2025-11-16T23:30:05.8998552Z"
   }
 ]

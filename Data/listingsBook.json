@@ -53,5 +53,16 @@
     "Genre": "romance",
     "Language": "portugues",
     "Summary": "askaksoas"
+  },
+  {
+    "Id": "5ee291ce-c95d-4461-abe3-6007b65e60dc",
+    "OwnerId": "81a2b518-a73d-4dac-9bf8-793d13d27ae7",
+    "Title": "lala",
+    "Author": "lala",
+    "Condition": "usado",
+    "Year": 2000,
+    "Genre": "terror",
+    "Language": "Portugues",
+    "Summary": "um menino vai comprar p\u00E3o e some"
   }
 ]
