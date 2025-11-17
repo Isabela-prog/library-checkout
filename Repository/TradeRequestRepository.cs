@@ -1,7 +1,6 @@
 ﻿using Library.Models;
 using System.Text.Json;
 
-
 namespace Library.Repository
 {
     public class TradeRequestRepository
@@ -26,7 +25,6 @@ namespace Library.Repository
                     _requests = JsonSerializer.Deserialize<List<TradeRequest>>(json) ?? new();
             }
         }
-
 
         public void Add(TradeRequest request)
         {
@@ -53,12 +51,12 @@ namespace Library.Repository
             }
         }
 
+        public List<TradeRequest> GetAll() => _requests;
+
         private void SaveAll()
         {
             var json = JsonSerializer.Serialize(_requests, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(_path, json);
         }
-
-
     }
 }

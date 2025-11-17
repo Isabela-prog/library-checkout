@@ -23,7 +23,9 @@ namespace Library.Services
                 RequesterId = requesterId,
                 OwnerId = ownerId,
                 BookRequestedId = bookRequestedId,
-                BookOfferedId = bookOfferedId
+                BookOfferedId = bookOfferedId,
+                Status = "Pendente",
+                CreatedAt = DateTime.Now
             };
 
             _tradeRepo.Add(request);
@@ -51,7 +53,7 @@ namespace Library.Services
             if (request == null || request.Status != "Pendente")
                 return false;
 
-            // Remove os livros da listagem
+            // Remove os livros da listagem (se existirem)
             _bookRepo.Delete(request.BookRequestedId);
             if (request.BookOfferedId.HasValue)
                 _bookRepo.Delete(request.BookOfferedId.Value);
@@ -59,10 +61,10 @@ namespace Library.Services
             // Atualiza o status original
             _tradeRepo.UpdateStatus(requestId, "Aceita");
 
-            // Histórico para o dono do livro
+            // Histórico para o dono do livro (enviou para troca)
             RegistrarHistorico(request, request.OwnerId, "enviado para troca");
 
-            // Histórico para o solicitante
+            // Histórico para o solicitante (recebeu por troca)
             RegistrarHistorico(request, request.RequesterId, "recebido por troca");
 
             return true;
@@ -83,15 +85,16 @@ namespace Library.Services
             return true;
         }
 
-        // Solicitações recebidas por um usuário
+        // Solicitações recebidas por um usuário (pendentes)
         public List<TradeRequest> ListarSolicitacoesRecebidas(Guid ownerId)
         {
             return _tradeRepo.GetByOwner(ownerId)
                              .Where(r => r.Status == "Pendente")
+                             .OrderByDescending(r => r.CreatedAt)
                              .ToList();
         }
 
-        // Solicitações enviadas por um usuário
+        // Solicitações enviadas por um usuário (todas)
         public List<TradeRequest> ListarSolicitacoesEnviadas(Guid requesterId)
         {
             return _tradeRepo.GetByRequester(requesterId)

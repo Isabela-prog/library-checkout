@@ -34,5 +34,32 @@
     "BookOfferedId": null,
     "Status": "Pendente",
     "CreatedAt": "2025-11-16T20:32:07.4204096-03:00"
+  },
+  {
+    "Id": "0e37deba-8880-42c9-aa16-a32af0ab7151",
+    "RequesterId": "1c61f827-a977-4285-b481-f767508deab3",
+    "OwnerId": "81a2b518-a73d-4dac-9bf8-793d13d27ae7",
+    "BookRequestedId": "5ee291ce-c95d-4461-abe3-6007b65e60dc",
+    "BookOfferedId": null,
+    "Status": "Aceita",
+    "CreatedAt": "2025-11-17T11:50:43.6391922-03:00"
+  },
+  {
+    "Id": "043c7f54-4b53-43ff-a7ab-5956670c43ab",
+    "RequesterId": "1c61f827-a977-4285-b481-f767508deab3",
+    "OwnerId": "81a2b518-a73d-4dac-9bf8-793d13d27ae7",
+    "BookRequestedId": "5ee291ce-c95d-4461-abe3-6007b65e60dc",
+    "BookOfferedId": null,
+    "Status": "enviado para troca",
+    "CreatedAt": "2025-11-17T11:52:20.8654241-03:00"
+  },
+  {
+    "Id": "ae838890-34fb-461e-b64e-e08ecb1d2451",
+    "RequesterId": "1c61f827-a977-4285-b481-f767508deab3",
+    "OwnerId": "81a2b518-a73d-4dac-9bf8-793d13d27ae7",
+    "BookRequestedId": "5ee291ce-c95d-4461-abe3-6007b65e60dc",
+    "BookOfferedId": null,
+    "Status": "recebido por troca",
+    "CreatedAt": "2025-11-17T11:52:20.8663329-03:00"
   }
 ]

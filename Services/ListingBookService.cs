@@ -56,5 +56,15 @@ namespace Library.Services
                         .Where(b => b.Author.Equals(author, StringComparison.OrdinalIgnoreCase))
                         .ToList();
         }
+
+        // Buscar todos os livros que batem title+author (de todos os usuários)
+        public List<ListingBook> FindAllByTitleAndAuthor(string title, string author)
+        {
+            return _repo.GetAll()
+                        .Where(b =>
+                            b.Title.Equals(title, StringComparison.OrdinalIgnoreCase) &&
+                            b.Author.Equals(author, StringComparison.OrdinalIgnoreCase))
+                        .ToList();
+        }
     }
 }
